@@ -28,20 +28,20 @@ long_description = '\n\n'.join([read('README'),
 
 __doc__ = long_description
 
-requirements = ['pyvisa>=1.8']
+requirements = ['hedgehog-pyvisa>=2.0.0']
 
 if sys.version_info < (2, 7):
     requirements.append('importlib')
 
-setup(name='PyVISA-py',
+setup(name='hedgehog-pyvisa-py',
       description='Python VISA bindings for GPIB, RS232, and USB instruments',
-      version='0.3.dev0',
+      version='0.4',
       long_description=long_description,
       author='Hernan E. Grecco',
       author_email='hernan.grecco@gmail.com',
       maintainer='Hernan E. Grecco',
       maintainer_email='hernan.grecco@gmail.com',
-      url='https://github.com/hgrecco/pyvisa-py',
+      url='https://github.com/lordoftheflies/hedgehog-pyvisa-py',
       test_suite='pyvisa-py.testsuite.testsuite',
       keywords='Remote VISA GPIB USB serial RS232 measurement acquisition',
       license='MIT License',
